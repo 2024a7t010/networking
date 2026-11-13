@@ -1,1 +1,60 @@
+Experiment 1: Classical Symmetric Ciphers
+Aim
+To implement and analyze Caesar Cipher and Vigenère Cipher in Python for encryption and decryption.
+
+Methodology
+Caesar Cipher
+Take the plaintext, shift value, and shift direction as input.
+Convert each character into its ASCII value.
+Apply the shift using modulo 26.
+Preserve uppercase and lowercase characters.
+Preserve spaces and special characters.
+Reverse the shift during decryption.
+Vigenère Cipher
+Take the plaintext and key as input.
+Convert each key character into a numerical shift.
+Apply the repeating key to alphabetic characters.
+Increment the key index only when an alphabetic character is processed.
+Preserve spaces, special characters, and character case.
+Add the key shift during encryption and subtract it during decryption.
+Features
+Menu-driven interface
+Caesar encryption and decryption
+Vigenère encryption and decryption
+User-defined shift and key
+Left and right Caesar shifts
+Case preservation
+Preservation of spaces and special characters
+Correct Vigenère key alignment
+Results
+Cipher	Encryption	Decryption	Verification
+Caesar	Successful	Successful	Passed
+Vigenère	Successful	Successful	Passed
+The decrypted text matched the original plaintext for the tested cases.
+
+Discussion
+Caesar Cipher uses a fixed shift, making it easy to brute-force. Vigenère uses multiple shifts and provides better pattern concealment, but its repeating-key structure remains vulnerable.
+
+Improvements
+Added a menu-driven interface.
+Added runtime input for text, shift, direction, key, and operation.
+Added support for both left and right Caesar shifts.
+Preserved character case and special characters.
+Used a separate key index for correct Vigenère key alignment.
+Sample Output
+Caesar Cipher
+==== Cipher Menu ====
+1. Caesar Cipher
+2. Vigenere Cipher
+3. Exit
+
+Enter your choice: 1
+Enter the text: Hello Network Security
+Encrypt or Decrypt? (e/d): e
+Enter the shift number: 3
+Enter direction for shift: right
+
+Encrypted text: Khoor Qhwzrun Vhfxulwb
+
+
 
